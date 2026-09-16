@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pollos Copacabana | Como te gusta a ti</title>
+<meta name="description" content="Pollos Copacabana: combos, alitas, papas y promociones de pollo frito. Pide ahora o visita nuestros restaurantes.">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header id="cabecera">
+  <div class="contenedor barra-superior">
+    <a href="#inicio" class="marca">
+      <img src="img/pollos-copacabana-logo.jpg" alt="Logo de Pollos Copacabana" width="64" height="64" class="logo">
+      <strong class="marca-texto">Pollos Copacabana</strong>
+    </a>
+
+    <nav aria-label="Navegación principal">
+      <ul class="menu-principal">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#menu">Pide ahora</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#vales">Vales</a></li>
+        <li><a href="#restaurantes">Restaurantes</a></li>
+      </ul>
+    </nav>
+
+    <aside class="acciones-usuario">
+      <a href="#ingresar" class="boton-ingresar">
+        <img src="img/logo-usuario.jpg" alt="" width="18" height="18" class="icono-inline">
+        Ingresar
+      </a>
+      <a href="#carrito" class="boton-carrito" aria-label="Carrito de compras">
+        <img src="img/logo-carrito.jpg" alt="" width="20" height="20" class="icono-inline">
+        <data value="0" class="contador-carrito">0</data>
+      </a>
+    </aside>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- HERO / PROMOCIÓN DESTACADA -->
+  <section class="hero" aria-labelledby="titulo-hero">
+    <img src="img/hero-combo-primavera.jpg" alt="Balde de pollo frito Copacabana con papas fritas, waffle y vasos de gaseosa" class="hero-imagen">
+    <article class="hero-contenido">
+      <p class="hero-etiqueta">Presas</p>
+      <h1 id="titulo-hero">Combo Balde Primavera</h1>
+      <p class="hero-descripcion">Para compartir en familia o con quien tú quieras: cualquier clima es perfecto para disfrutarlo.</p>
+
+      <dl class="hero-precio">
+        <dt>Precio regular</dt>
+        <dd><del>440 Bs</del></dd>
+        <dt>Precio de la promoción</dt>
+        <dd><ins>A sólo <mark>130 Bs</mark></ins></dd>
+      </dl>
+
+      <p class="hero-vigencia">Promoción válida hasta el <time datetime="2026-10-31">31 de octubre de 2026</time>.</p>
+
+      <details class="hero-incluye">
+        <summary>¿Qué incluye el combo?</summary>
+        <ul>
+          <li>1 balde grande de presas de pollo frito</li>
+          <li>2 baldes de papas fritas</li>
+          <li>3 vasos grandes de gaseosa</li>
+          <li>1 waffle de cortesía</li>
+        </ul>
+      </details>
+    </article>
+
+    <ol class="hero-indicadores" aria-label="Promociones destacadas">
+      <li></li><li></li><li></li><li class="activo"></li><li></li><li></li><li></li>
+    </ol>
+  </section>
+
+  <!-- MENÚ / CATEGORÍAS -->
+  <section id="menu" aria-labelledby="titulo-menu">
+    <h2 id="titulo-menu">¿Qué te antojas hoy?</h2>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-combos.jpg" alt="Combo familiar de pollo frito Copacabana">
+      <h3>Combos</h3>
+      <p>Baldes y combos familiares con presas crocantes, papas y gaseosa.</p>
+      <p class="precio-desde">Desde <data value="45">45 Bs</data></p>
+    </article>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-alitas.jpg" alt="Porción de alitas de pollo picantes">
+      <h3>Alitas</h3>
+      <p>Alitas bañadas en nuestras salsas: BBQ, picante y miel mostaza.</p>
+      <p class="precio-desde">Desde <data value="35">35 Bs</data></p>
+    </article>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-papas.jpg" alt="Porción de papas fritas Copacabana">
+      <h3>Papas y acompañamientos</h3>
+      <p>Papas fritas, arroz, ensalada y puré, preparados al momento.</p>
+      <p class="precio-desde">Desde <data value="15">15 Bs</data></p>
+    </article>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-bebidas.jpg" alt="Vasos grandes de gaseosa Copacabana">
+      <h3>Bebidas</h3>
+      <p>Gaseosas, jugos naturales y refrescos bien helados.</p>
+      <p class="precio-desde">Desde <data value="8">8 Bs</data></p>
+    </article>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-postres.jpg" alt="Waffle con helado de postre">
+      <h3>Postres</h3>
+      <p>Waffles, helados y postres para cerrar la comida con dulzura.</p>
+      <p class="precio-desde">Desde <data value="12">12 Bs</data></p>
+    </article>
+
+    <article class="tarjeta-categoria">
+      <img src="img/categoria-vegetariano.jpg" alt="Ensalada fresca como opción vegetariana">
+      <h3>Opciones vegetarianas</h3>
+      <p>Ensaladas frescas y guarniciones sin pollo, igual de sabrosas.</p>
+      <p class="precio-desde">Desde <data value="20">20 Bs</data></p>
+    </article>
+  </section>
+
+  <!-- PROMOCIONES -->
+  <section id="promociones" aria-labelledby="titulo-promos">
+    <h2 id="titulo-promos">Promociones</h2>
+
+    <details class="tarjeta-promo" open>
+      <summary>Balde Primavera — 2x1 en baldes medianos</summary>
+      <p>Todos los martes y miércoles, lleva dos baldes medianos de presas por el precio de uno. Válido para consumo en restaurante y para llevar.</p>
+      <p><small>Vigencia: <time datetime="2026-09-01/2026-10-31">1 de septiembre al 31 de octubre de 2026</time></small></p>
+    </details>
+
+    <details class="tarjeta-promo">
+      <summary>Combo Estudiante</summary>
+      <p>Presentando tu carnet universitario, obtienes un combo individual de 2 presas, papas y bebida a precio especial.</p>
+      <p><small>Disponible de lunes a viernes, todo el día.</small></p>
+    </details>
+
+    <details class="tarjeta-promo">
+      <summary>Delivery gratis desde 80 Bs</summary>
+      <p>En pedidos por nuestra plataforma de delivery superiores a 80 Bs, el envío corre por nuestra cuenta dentro del radio de cobertura.</p>
+      <p><small>Aplica en todas las ciudades con cobertura de delivery.</small></p>
+    </details>
+  </section>
+
+  <!-- VALES -->
+  <section id="vales" aria-labelledby="titulo-vales">
+    <h2 id="titulo-vales">Vales Copacabana</h2>
+    <article>
+      <img src="img/vale-regalo.jpg" alt="Tarjeta de vale de regalo Pollos Copacabana">
+      <section class="vale-info">
+        <p>Regala un vale Copacabana para que la persona que más quieres elija su combo favorito. Disponibles en montos de <data value="50">50 Bs</data>, <data value="100">100 Bs</data> y <data value="200">200 Bs</data>.</p>
+        <details>
+          <summary>¿Cómo se usa el vale?</summary>
+          <p>El vale se canjea directamente en caja o al momento de recoger el pedido, presentando el código impreso o digital.</p>
+        </details>
+      </section>
+    </article>
+  </section>
+
+  <!-- RESTAURANTES -->
+  <section id="restaurantes" aria-labelledby="titulo-restaurantes">
+    <h2 id="titulo-restaurantes">Nuestros restaurantes</h2>
+
+    <article class="tarjeta-restaurante">
+      <img src="img/restaurante_sopocachi.jpg" alt="Fachada de Pollos Copacabana Sopocachi">
+      <h3>Copacabana Sopocachi</h3>
+      <address>Av. 20 de Octubre N.° 2245, La Paz</address>
+      <dl class="horario">
+        <dt>Lunes a viernes</dt>
+        <dd><time datetime="11:00">11:00</time> – <time datetime="22:00">22:00</time></dd>
+        <dt>Sábado y domingo</dt>
+        <dd><time datetime="11:00">11:00</time> – <time datetime="23:00">23:00</time></dd>
+      </dl>
+    </article>
+
+    <article class="tarjeta-restaurante">
+      <img src="img/restaurante_san_miguel.jpg" alt="Fachada de Pollos Copacabana San Miguel">
+      <h3>Copacabana San Miguel</h3>
+      <address>Calle 21 de Calacoto N.° 8130, La Paz</address>
+      <dl class="horario">
+        <dt>Lunes a viernes</dt>
+        <dd><time datetime="11:00">11:00</time> – <time datetime="22:00">22:00</time></dd>
+        <dt>Sábado y domingo</dt>
+        <dd><time datetime="11:00">11:00</time> – <time datetime="23:00">23:00</time></dd>
+      </dl>
+    </article>
+
+    <article class="tarjeta-restaurante">
+      <img src="img/restaurante_el_alto.jpg" alt="Fachada de Pollos Copacabana El Alto">
+      <h3>Copacabana El Alto</h3>
+      <address>Av. Juan Pablo II N.° 340, El Alto</address>
+      <dl class="horario">
+        <dt>Lunes a domingo</dt>
+        <dd><time datetime="10:00">10:00</time> – <time datetime="21:00">21:00</time></dd>
+      </dl>
+    </article>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" aria-labelledby="titulo-nosotros">
+    <h2 id="titulo-nosotros">Sobre Copacabana</h2>
+    <p>Pollos Copacabana <abbr title="Sociedad de Responsabilidad Limitada">S.R.L.</abbr> es una cadena boliviana de comida rápida especializada en pollo frito, presente en varias ciudades del país desde hace más de dos décadas. Nuestra receta original y nuestro compromiso con la calidad nos convierten en la opción favorita de miles de familias.</p>
+  </section>
+
+</main>
+
+<footer id="pie-de-pagina">
+  <div class="contenedor pie-contenido">
+    <section aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Contacto</h2>
+      <address>
+        Línea de atención: <a href="tel:+59122345678">(591) 2 2345678</a><br>
+        Correo: <a href="mailto:contacto@polloscopacabana.bo">contacto@polloscopacabana.bo</a>
+      </address>
+    </section>
+
+    <nav aria-labelledby="titulo-enlaces">
+      <h2 id="titulo-enlaces">Enlaces</h2>
+      <ul class="lista-pie">
+        <li><a href="#menu">Pide ahora</a></li>
+        <li><a href="#promociones">Promociones</a></li>
+        <li><a href="#vales">Vales</a></li>
+        <li><a href="#restaurantes">Restaurantes</a></li>
+      </ul>
+    </nav>
+
+    <section aria-labelledby="titulo-redes">
+      <h2 id="titulo-redes">Síguenos</h2>
+      <ul class="lista-redes">
+        <li><a href="#facebook"><img src="img/logo-facebook.jpg" alt="Facebook" width="24" height="24"></a></li>
+        <li><a href="#instagram"><img src="img/logo-instagram.jpg" alt="Instagram" width="24" height="24"></a></li>
+        <li><a href="#tiktok"><img src="img/logo-tiktok.jpg" alt="TikTok" width="24" height="24"></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="derechos">&copy; <time datetime="2026">2026</time> Pollos Copacabana. Como te gusta a ti.</p>
+</footer>
+
+</body>
+  </html>
+  
